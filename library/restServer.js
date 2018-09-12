@@ -246,7 +246,7 @@ module.exports = function(vac, opts, log) {
   this.serverStart = function() {
 
     // And then fire up the server.
-    server.listen(opts.SERVER_PORT, 0.0.0.0, function() {
+    server.listen(opts.SERVER_PORT, '0.0.0.0', function() {
       log.it(server.name + ' listening at ' + server.url);
     });
 
